@@ -17,17 +17,10 @@
 	"entrypoints": {
 		"main": [
 			"net.gloobert.glowstoneextended.GlowstoneExtended"
-		],
-		"client": [
-			"net.gloobert.glowstoneextended.GlowstoneExtendedClient"
 		]
 	},
 	"mixins": [
-		"glowstone-extended.mixins.json",
-		{
-			"config": "glowstone-extended.client.mixins.json",
-			"environment": "client"
-		}
+		"glowstone-extended.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
