@@ -29,6 +29,13 @@ dependencies {
 	
 }
 
+configurations.configureEach {
+	resolutionStrategy {
+		// make sure the desired version of loader is used. Sometimes old versions are pulled in transitively.
+		force("net.fabricmc:fabric-loader:$fabric_loader_version")
+	}
+}
+
 processResources {
 	inputs.property "version", project.version
 
