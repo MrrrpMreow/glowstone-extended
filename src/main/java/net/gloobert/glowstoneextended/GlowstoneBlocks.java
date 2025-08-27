@@ -8,9 +8,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 
 public final class GlowstoneBlocks {
-    public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().luminance("15")));
-    public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().luminance("15")));
-    public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().luminance("15")));
+    public static GlowstoneBlockSettings(Settings settings) {
+        super(settings.luminance(15));
+        super(settings.hardness(0.3f));
+        super(settings.resistance(0.3f));
+    }
+    public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", GlowstoneBlockSettings);
+    public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", GlowstoneBlockSettings);
+    public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", GlowstoneBlockSettings);
     
     private static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
