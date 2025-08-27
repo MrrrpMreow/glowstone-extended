@@ -1,6 +1,6 @@
 package net.gloobert.glowstoneextended;
 
-import net.minecraft.block.Block
+import net.minecraft.block.Block;
 
 public final class GlowstoneBlocks {
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(4.0f)));
