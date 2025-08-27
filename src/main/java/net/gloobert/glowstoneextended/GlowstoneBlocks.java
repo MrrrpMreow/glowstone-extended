@@ -7,7 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 
-public final class GlowstoneBlocks {
+public final class GlowstoneBlocks extends Block {
     public GlowstoneBlockSettings(Settings settings) {
         super(settings.luminance(15));
         super(settings.hardness(0.3f));
