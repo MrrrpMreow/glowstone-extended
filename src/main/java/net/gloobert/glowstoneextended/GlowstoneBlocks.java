@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 
 public final class GlowstoneBlocks {
-    int glowstoneDefaultLightLevel = 15;
+    int static glowstoneDefaultLightLevel = 15;
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().luminance(glowstoneDefaultLightLevel)));
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().luminance(glowstoneDefaultLightLevel)));
     public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().luminance(glowstoneDefaultLightLevel)));
