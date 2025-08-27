@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 
 public final class GlowstoneBlocks {
-    public static GlowstoneBlockSettings(Settings settings) {
+    public GlowstoneBlockSettings(Settings settings) {
         super(settings.luminance(15));
         super(settings.hardness(0.3f));
         super(settings.resistance(0.3f));
