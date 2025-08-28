@@ -17,6 +17,8 @@ import net.minecraft.data.client.Models;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.TextureMap;
 
+import net.gloobert.GlowstoneBlocks;
+
 public class GlowstoneBlockModels extends FabricModelProvider {
   public GlowstoneBlockModels(FabricDataOutput output) {
     super(output);
