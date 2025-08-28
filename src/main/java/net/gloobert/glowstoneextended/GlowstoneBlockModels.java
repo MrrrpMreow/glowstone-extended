@@ -24,7 +24,7 @@ public class GlowstoneBlockModels extends FabricModelProvider {
 
   @Override
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        final Identifier polishedSoulGlowstoneModel = Models.CUBE_ALL.upload(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, TextureMap.all(Identifier("glowstone-extended:block/polished_glowstone/polished_soul_glowstone")), blockStateModelGenerator.modelCollector);
+        final Identifier polishedSoulGlowstoneModel = Models.CUBE_ALL.upload(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, TextureMap.all(Identifier.of("glowstone-extended","block/polished_glowstone/polished_soul_glowstone")), blockStateModelGenerator.modelCollector);
         blockStateModelGenerator.registerParentedItemModel(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, polishedSoulGlowstoneModel);
   }
   
