@@ -26,9 +26,31 @@ public class GlowstoneBlockModels extends FabricModelProvider {
 
   @Override
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        final Identifier polishedSoulGlowstoneModel = Models.CUBE_ALL.upload(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, TextureMap.all(Identifier.of("glowstone-extended","block/polished_glowstone/polished_soul_glowstone")), blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.registerParentedItemModel(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, polishedSoulGlowstoneModel);
-        blockStateModelGenerator.registerSingleton(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, TextureMap.all(Identifier.of("glowstone-extended","block/polished_glowstone/polished_soul_glowstone"))); 
+        // Glowstone Variants
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.RED_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.ORANGE_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.YELLOW_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.GREEN_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.BLUE_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.LIGHT_BLUE_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.PINK_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.PURPLE_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.BROWN_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.BLACK_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.GRAY_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.LIGHT_GRAY_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.WHITE_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.MAGENTA_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.LIME_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.CYAN_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.SOUL_GLOWSTONE);
+        // Polished Glowstone and variants
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.POLISHED_GLOWSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE);
+        // Polished Glowstone Bricks and variants
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.POLISHED_GLOWSTONE_BRICKS);
+        // Glowstone Bricks and variants
+        blockStateModelGenerator.registerSimpleCubeAll(GlowstoneBlocks.GLOWSTONE_BRICKS);
   }
   
   @Override

@@ -39,7 +39,7 @@ public final class GlowstoneBlocks {
     // Glowstone Bricks and variants
     public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     
-    private static <T extends Block> T register(String path, T block) {
+    public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
         Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", path), new BlockItem(block, new Item.Settings()));
         return block;
