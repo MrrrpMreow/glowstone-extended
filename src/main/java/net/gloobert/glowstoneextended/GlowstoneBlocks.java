@@ -10,8 +10,32 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 
 public final class GlowstoneBlocks {
+    // Glowstone variants
+    public static final Block RED_GLOWSTONE = register("red_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block ORANGE_GLOWSTONE = register("orange_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block YELLOW_GLOWSTONE = register("yellow_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block GREEN_GLOWSTONE = register("green_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BLUE_GLOWSTONE = register("blue_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIGHT_BLUE_GLOWSTONE = register("light_blue_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block PINK_GLOWSTONE = register("pink_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block PURPLE_GLOWSTONE = register("purple_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BROWN_GLOWSTONE = register("brown_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BLACK_GLOWSTONE = register("black_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block GRAY_GLOWSTONE = register("gray_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIGHT_GRAY_GLOWSTONE = register("light_gray_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block WHITE_GLOWSTONE = register("white_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    
+    // Polished Glowstone and variants
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+
+    // Polished Glowstone Bricks and variants
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+
+    // Glowstone Bricks and variants
     public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     
     private static <T extends Block> T register(String path, T block) {

@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "glowstone-extended:block/glowstone_bricks" }
+    "": { "model": "glowstone-extended:block/glowstone_bricks/glowstone_bricks" }
   }
 }
