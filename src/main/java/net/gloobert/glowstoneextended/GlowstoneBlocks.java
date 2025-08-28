@@ -31,6 +31,7 @@ public final class GlowstoneBlocks {
     
     // Polished Glowstone and variants
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block POLISHED_SOUL_GLOWSTONE = register("polished_soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
 
     // Polished Glowstone Bricks and variants
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
