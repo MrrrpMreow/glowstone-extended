@@ -16,10 +16,19 @@ import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TextureMap;
 
 public class GlowstoneBlockModels extends FabricModelProvider {
+  public GlowstoneBlockModels(FabricDataOutput output) {
+    super(output);
+  }
+
   @Override
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         final Identifier polishedSoulGlowstoneModel = Models.CUBE_ALL.upload(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, TextureMap.all(Identifier.of("glowstone-extended", "blocks/polished_glowstone/polished_soul_glowstone")), blockStateModelGenerator.modelCollector);
         blockStateModelGenerator.registerParentedItemModel(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, polishedSoulGlowstoneModel);
+  }
+  
+  @Override
+  public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+    // i have no item models to generate... *yet*
   }
 }
 
