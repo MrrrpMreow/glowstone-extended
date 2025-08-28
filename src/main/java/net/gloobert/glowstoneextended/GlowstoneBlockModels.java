@@ -13,8 +13,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TextureMap;
 
-public static class GlowstoneBlockModels extends FabricModelProvider {
+public class GlowstoneBlockModels extends FabricModelProvider {
   @Override
   public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         final Identifier polishedSoulGlowstoneModel = Models.CUBE_ALL.upload(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE, TextureMap.all(Identifier.of("glowstone-extended", "blocks/polished_glowstone/polished_soul_glowstone")), blockStateModelGenerator.modelCollector);
