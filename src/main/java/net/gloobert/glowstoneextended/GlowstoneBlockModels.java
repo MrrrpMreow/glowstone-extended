@@ -1,6 +1,6 @@
 package net.gloobert.glowstoneextended;
 
-import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 
 import net.minecraft.block.Block;
