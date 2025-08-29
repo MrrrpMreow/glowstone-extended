@@ -29,6 +29,10 @@ dependencies {
 	
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/glowstone-extended.accesswidener")
+}
+
 
 processResources {
 	inputs.property "version", project.version

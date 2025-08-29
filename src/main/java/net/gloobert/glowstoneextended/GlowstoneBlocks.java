@@ -31,6 +31,7 @@ public final class GlowstoneBlocks {
     
     // Polished Glowstone and variants
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block STRIPPED_POLISHED_GLOWSTONE = register("stripped_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block POLISHED_SOUL_GLOWSTONE = register("polished_soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
 
     // Polished Glowstone Bricks and variants
@@ -61,6 +62,11 @@ public final class GlowstoneBlocks {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
         Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", path), new BlockItem(block, new Item.Settings()));
         return block;
+    }
+
+	public static void addStrippables() {
+		AxeItem.STRIPPED_BLOCKS = new HashMap<>(AxeItem.STRIPPED_BLOCKS);
+		AxeItem.STRIPPED_BLOCKS.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
     }
     
     public static void initialize() {
