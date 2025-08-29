@@ -1,7 +1,9 @@
 {
+  "itemGroup.glowstone-extended.glowstone_extended_creative": "Glowstone Extended",
   "block.glowstone-extended.glowstone_bricks": "Glowstone Bricks",
   "block.glowstone-extended.polished_glowstone_bricks": "Polished Glowstone Bricks",
   "block.glowstone-extended.polished_glowstone": "Polished Glowstone",
+  "block.glowstone-extended.polished__soul_glowstone": "Polished Soul Glowstone",
   "block.glowstone-extended.soul_glowstone": "Soul Glowstone",
   "block.glowstone-extended.red_glowstone": "Red Glowstone",
   "block.glowstone-extended.orange_glowstone": "Orange Glowstone",
