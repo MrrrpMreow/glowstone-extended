@@ -21,5 +21,6 @@ public class GlowstoneExtended implements ModInitializer {
 
 		LOGGER.info("Straight up glowing it.. and by it? Lets just say my stone");
         GlowstoneBlocks.initialize();
+		GlowstoneCreativeGUI.initialize();
 	}
 }
