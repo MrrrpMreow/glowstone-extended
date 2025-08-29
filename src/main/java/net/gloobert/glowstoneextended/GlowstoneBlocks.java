@@ -35,11 +35,11 @@ public final class GlowstoneBlocks {
 
     // Polished Glowstone Bricks and variants
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
-    public static final Block POLISHED_SOUL_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
+    public static final Block POLISHED_SOUL_GLOWSTONE_BRICKS = register("polished_soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
 
     // Glowstone Bricks and variants
     public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
-    public static final Block SOUL_GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
+    public static final Block SOUL_GLOWSTONE_BRICKS = register("soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
     public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
