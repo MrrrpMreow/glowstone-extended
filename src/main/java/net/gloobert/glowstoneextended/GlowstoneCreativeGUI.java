@@ -18,7 +18,7 @@ public class GlowstoneCreativeGUI {
         .icon(() -> new ItemStack(GlowstoneBlocks.POLISHED_GLOWSTONE))
         .displayName(Text.translatable("itemGroup.glowstone-extended.glowstone_extended_creative"))
         .entries((context, entries) -> {
-            entries.add(items.GLOWSTONE);
+            entries.add(Items.GLOWSTONE);
             entries.add(GlowstoneBlocks.SOUL_GLOWSTONE);
             entries.add(GlowstoneBlocks.WHITE_GLOWSTONE);
             entries.add(GlowstoneBlocks.LIGHT_GRAY_GLOWSTONE);
