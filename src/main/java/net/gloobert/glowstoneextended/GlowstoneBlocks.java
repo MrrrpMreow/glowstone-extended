@@ -8,6 +8,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.AxeItem;
+
+import java.util.HashMap;
 
 public final class GlowstoneBlocks {
     // Glowstone variants
