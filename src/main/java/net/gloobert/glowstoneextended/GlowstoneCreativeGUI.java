@@ -18,6 +18,7 @@ public class GlowstoneCreativeGUI {
         .icon(() -> new ItemStack(GlowstoneBlocks.POLISHED_GLOWSTONE))
         .displayName(Text.translatable("itemGroup.glowstone-extended.glowstone_extended_creative"))
         .entries((context, entries) -> {
+            // Glowstone and variants
             entries.add(Items.GLOWSTONE);
             entries.add(GlowstoneBlocks.SOUL_GLOWSTONE);
             entries.add(GlowstoneBlocks.WHITE_GLOWSTONE);
@@ -36,10 +37,15 @@ public class GlowstoneCreativeGUI {
             entries.add(GlowstoneBlocks.PURPLE_GLOWSTONE);
             entries.add(GlowstoneBlocks.MAGENTA_GLOWSTONE);
             entries.add(GlowstoneBlocks.PINK_GLOWSTONE);
+            // Polished Glowstone and variants
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE);
             entries.add(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE);
+            // Polished Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE_BRICKS);
+            // Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.SOUL_GLOWSTONE_BRICKS);
         })
         .build());
     public static void initialize() {

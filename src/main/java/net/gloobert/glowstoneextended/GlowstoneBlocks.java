@@ -27,17 +27,19 @@ public final class GlowstoneBlocks {
     public static final Block MAGENTA_GLOWSTONE = register("magenta_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block LIME_GLOWSTONE = register("lime_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block CYAN_GLOWSTONE = register("cyan_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
-    public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block SOUL_GLOWSTONE = register("soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
     // Polished Glowstone and variants
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
-    public static final Block POLISHED_SOUL_GLOWSTONE = register("polished_soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block POLISHED_SOUL_GLOWSTONE = register("polished_soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
 
     // Polished Glowstone Bricks and variants
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block POLISHED_SOUL_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
 
     // Glowstone Bricks and variants
     public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block SOUL_GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
     public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
