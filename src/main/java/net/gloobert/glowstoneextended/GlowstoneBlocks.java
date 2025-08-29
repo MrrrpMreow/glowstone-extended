@@ -73,5 +73,6 @@ public final class GlowstoneBlocks {
     }
     
     public static void initialize() {
+        addStrippables();
     }
 }
