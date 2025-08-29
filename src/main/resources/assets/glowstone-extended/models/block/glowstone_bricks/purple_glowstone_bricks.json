@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "glowstone-extended:block/glowstone_bricks/purple_glowstone_bricks"
+  }
+}

@@ -46,6 +46,22 @@ public class GlowstoneCreativeGUI {
             // Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.SOUL_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.WHITE_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.LIGHT_GRAY_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.GRAY_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.BLACK_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.BROWN_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.RED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.ORANGE_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.YELLOW_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.LIME_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.GREEN_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.CYAN_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.LIGHT_BLUE_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.BLUE_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.PURPLE_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.MAGENTA_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.PINK_GLOWSTONE_BRICKS);
         })
         .build());
     public static void initialize() {

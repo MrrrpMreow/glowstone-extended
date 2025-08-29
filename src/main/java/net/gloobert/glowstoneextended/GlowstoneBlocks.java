@@ -39,6 +39,22 @@ public final class GlowstoneBlocks {
 
     // Glowstone Bricks and variants
     public static final Block GLOWSTONE_BRICKS = register("glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block RED_GLOWSTONE_BRICKS = register("red_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block ORANGE_GLOWSTONE_BRICKS = register("orange_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block YELLOW_GLOWSTONE_BRICKS = register("yellow_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block GREEN_GLOWSTONE_BRICKS = register("green_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BLUE_GLOWSTONE_BRICKS = register("blue_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIGHT_BLUE_GLOWSTONE_BRICKS = register("light_blue_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block PINK_GLOWSTONE_BRICKS = register("pink_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block PURPLE_GLOWSTONE_BRICKS = register("purple_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BROWN_GLOWSTONE_BRICKS = register("brown_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BLACK_GLOWSTONE_BRICKS = register("black_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block GRAY_GLOWSTONE_BRICKS = register("gray_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIGHT_GRAY_GLOWSTONE_BRICKS = register("light_gray_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block WHITE_GLOWSTONE_BRICKS = register("white_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block MAGENTA_GLOWSTONE_BRICKS = register("magenta_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIME_GLOWSTONE_BRICKS = register("lime_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block CYAN_GLOWSTONE_BRICKS = register("cyan_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block SOUL_GLOWSTONE_BRICKS = register("soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
     public static <T extends Block> T register(String path, T block) {
