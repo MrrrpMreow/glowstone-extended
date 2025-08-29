@@ -20,4 +20,6 @@ public class GlowstoneCreativeGUI {
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE);
         })
         .build());
+    public static void initialize() {
+    }
 }
