@@ -76,16 +76,17 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
-        BlockPos pos = hitresult.getBlockPos()
-        if (player.selectedItem().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
-            world.setBlockState(pos, STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
-            return ActionResult.valueOf("SUCCESS");
-        } else {
-            return ActionResult.valueOf("PASS");
-        }
-    });
+    
     
     public static void initialize() {
+        UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
+            BlockPos pos = hitresult.getBlockPos()
+            if (player.selectedItem().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
+                world.setBlockState(pos, STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
+                return ActionResult.valueOf("SUCCESS");
+            } else {
+                return ActionResult.valueOf("PASS");
+            }
+        });
     }
 }
