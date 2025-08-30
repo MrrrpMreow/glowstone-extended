@@ -74,7 +74,7 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    useOnBlock.EVENT.register((ItemUsageContext context) -> {
+    useOnBlock.EVENT.register((context) -> {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
         if (context.getStack().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
