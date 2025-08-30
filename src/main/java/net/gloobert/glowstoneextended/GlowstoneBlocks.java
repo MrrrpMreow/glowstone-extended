@@ -16,6 +16,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.AxeItem;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.EquipmentSlot;
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
@@ -82,7 +83,7 @@ public final class GlowstoneBlocks {
     public static void initialize() {
         UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
             BlockPos pos = hitresult.getBlockPos();
-            if (player.selectedItem().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
+            if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
                 world.setBlockState(pos, STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
                 return ActionResult.valueOf("SUCCESS");
             } else {
