@@ -14,6 +14,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.world.World;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.item.AxeItem;
 
 
 public final class GlowstoneBlocks {
