@@ -16,6 +16,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.AxeItem;
 
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+
 
 public final class GlowstoneBlocks {
     // Glowstone variants
@@ -74,10 +76,9 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    useOnBlock.EVENT.register((context) -> {
-        World world = context.getWorld();
-        BlockPos pos = context.getBlockPos();
-        if (context.getStack().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
+    UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
+        BlockPos pos = hitresult.getBlockPos()
+        if (player.selectedItem().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
             world.setBlockState(pos, STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
             return ActionResult.valueOf("SUCCESS");
         } else {
