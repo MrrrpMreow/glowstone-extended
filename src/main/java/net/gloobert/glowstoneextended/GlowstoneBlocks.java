@@ -74,10 +74,10 @@ public final class GlowstoneBlocks {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        World world = context.getWorld()
-        BlockPos pos = context.getBlockPos()
+        World world = context.getWorld();
+        BlockPos pos = context.getBlockPos();
         if (context.getStack().getItem() instanceof AxeItem && world.getWorld().getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
-            world.setBlockState(STRIPPED_POLISHED_GLOWSTONE.getDefaultState())
+            world.setBlockState(STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
         }
 
         return super.useOnBlock(context);
