@@ -78,17 +78,26 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    
+    public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, Item[] itemArray) {
+        int itemArrayPoint = 0;
+        conversionMap.forEach(
+            (originBlock, convertedBlock)
+                -> {
+                UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
+                    BlockPos pos = hitresult.getBlockPos();
+                    if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof itemArray[itemArrayPoint] && world.getBlockState(pos).isOf(originBlock)) {
+                        world.setBlockState(pos, convertedBlock.getDefaultState());
+                        return ActionResult.valueOf("SUCCESS");
+                    } else {
+                        return ActionResult.valueOf("PASS");
+                    }
+                });
+                itemArrayPoint += 1;
+            }
+        );
+    }
     
     public static void initialize() {
-        UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
-            BlockPos pos = hitresult.getBlockPos();
-            if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
-                world.setBlockState(pos, STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
-                return ActionResult.valueOf("SUCCESS");
-            } else {
-                return ActionResult.valueOf("PASS");
-            }
-        });
+        registerBlockInteractEvents();
     }
 }
