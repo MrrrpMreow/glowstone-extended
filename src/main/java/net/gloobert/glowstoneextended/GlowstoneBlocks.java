@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.world.World;
@@ -20,6 +21,7 @@ import net.minecraft.entity.EquipmentSlot;
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
+import java.util.HashMap;
 
 public final class GlowstoneBlocks {
     // Glowstone variants
@@ -98,6 +100,9 @@ public final class GlowstoneBlocks {
     }
     
     public static void initialize() {
-        registerBlockInteractEvents();
+        HashMap<Block, Block> blockConversions = new HashMap<>();
+        blockConversions.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
+        Item[] converterItems = {Items.DIAMOND_AXE};
+        registerBlockInteractEvents(blockConversions, converterItems);
     }
 }
