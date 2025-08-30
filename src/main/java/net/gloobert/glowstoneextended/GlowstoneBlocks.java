@@ -4,13 +4,16 @@ import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.AbstractBlock.AbstractBlockState;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Hand;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.AxeItem;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 
-import java.util.HashMap;
+import net.fabricmc.fabric.api.event;
 
 public final class GlowstoneBlocks {
     // Glowstone variants
@@ -34,8 +37,10 @@ public final class GlowstoneBlocks {
     
     // Polished Glowstone and variants
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
-    public static final Block STRIPPED_POLISHED_GLOWSTONE = register("stripped_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block POLISHED_SOUL_GLOWSTONE = register("polished_soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
+
+    // Stripped Polished Glowstone and variants
+    public static final Block STRIPPED_POLISHED_GLOWSTONE = register("stripped_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
 
     // Polished Glowstone Bricks and variants
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
@@ -67,12 +72,17 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-	public static void addStrippables() {
-		AxeItem.STRIPPED_BLOCKS = new HashMap<>(AxeItem.STRIPPED_BLOCKS);
-		AxeItem.STRIPPED_BLOCKS.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+        World world = context.getWorld()
+        BlockPos pos = context.getBlockPos()
+        if (context.getStack().getItem() instanceof AxeItem && world.getWorld().getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
+            world.setBlockState(STRIPPED_POLISHED_GLOWSTONE.getDefaultState())
+        }
+
+        return super.useOnBlock(context);
     }
     
     public static void initialize() {
-        addStrippables();
     }
 }
