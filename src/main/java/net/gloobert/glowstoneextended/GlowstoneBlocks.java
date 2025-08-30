@@ -75,7 +75,7 @@ public final class GlowstoneBlocks {
     }
 
     @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
+    useOnBlock.EVENT.register((ItemUsageContext context) -> {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
         if (context.getStack().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
@@ -84,7 +84,7 @@ public final class GlowstoneBlocks {
         } else {
             return ActionResult.valueOf("PASS");
         }
-    }
+    });
     
     public static void initialize() {
     }
