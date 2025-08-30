@@ -87,7 +87,7 @@ public final class GlowstoneBlocks {
             (originBlock, convertedBlock) -> {
                 UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
                     BlockPos pos = hitresult.getBlockPos();
-                    if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof activatorItem && world.getBlockState(pos).isOf(originBlock)) {
+                    if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == activatorItem && world.getBlockState(pos).isOf(originBlock)) {
                         world.setBlockState(pos, convertedBlock.getDefaultState());
                         return ActionResult.valueOf("SUCCESS");
                     } else {
