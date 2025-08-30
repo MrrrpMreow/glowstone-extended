@@ -2,7 +2,7 @@ plugins {
 	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
-
+String buildNumber = System.getenv("GITHUB_RUN_NUMBER")
 version = project.mod_version + (buildNumber != null ? "-build.$buildNumber" : "")
 group = project.maven_group
 
