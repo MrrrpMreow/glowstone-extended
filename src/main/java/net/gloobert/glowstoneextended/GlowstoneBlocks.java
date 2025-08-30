@@ -9,11 +9,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.world.World;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-import net.fabricmc.fabric.api.event;
 
 public final class GlowstoneBlocks {
     // Glowstone variants
