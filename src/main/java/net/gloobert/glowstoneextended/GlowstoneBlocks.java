@@ -74,7 +74,6 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    @Override
     useOnBlock.EVENT.register((ItemUsageContext context) -> {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
