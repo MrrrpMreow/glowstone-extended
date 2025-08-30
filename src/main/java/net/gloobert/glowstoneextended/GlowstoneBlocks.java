@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.AxeItem;
+import net.minecraft.entity.player.PlayerEntity;
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
