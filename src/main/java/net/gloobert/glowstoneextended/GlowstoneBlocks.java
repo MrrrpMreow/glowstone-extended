@@ -80,12 +80,12 @@ public final class GlowstoneBlocks {
 
     public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, Item[] itemArray) {
         int itemArrayPoint = 0;
+        Item activatorItem = itemArray[itemArrayPoint];
         conversionMap.forEach(
-            (originBlock, convertedBlock)
-                -> {
+            (originBlock, convertedBlock) -> {
                 UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
                     BlockPos pos = hitresult.getBlockPos();
-                    if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof itemArray[itemArrayPoint] && world.getBlockState(pos).isOf(originBlock)) {
+                    if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof activatorItem && world.getBlockState(pos).isOf(originBlock)) {
                         world.setBlockState(pos, convertedBlock.getDefaultState());
                         return ActionResult.valueOf("SUCCESS");
                     } else {
