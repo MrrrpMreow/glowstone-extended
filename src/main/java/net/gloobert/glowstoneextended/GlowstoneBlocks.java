@@ -79,9 +79,9 @@ public final class GlowstoneBlocks {
         BlockPos pos = context.getBlockPos();
         if (context.getStack().getItem() instanceof AxeItem && world.getBlockState(pos).isOf(POLISHED_GLOWSTONE)) {
             world.setBlockState(pos, STRIPPED_POLISHED_GLOWSTONE.getDefaultState());
-            return ActionResult.valueOf("SUCCESS")
+            return ActionResult.valueOf("SUCCESS");
         } else {
-            return ActionResult.valueOf("PASS")
+            return ActionResult.valueOf("PASS");
         }
     }
     
