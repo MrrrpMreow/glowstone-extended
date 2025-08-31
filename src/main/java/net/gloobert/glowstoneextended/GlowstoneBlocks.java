@@ -102,6 +102,8 @@ public final class GlowstoneBlocks {
                         } else {
                             return ActionResult.valueOf("PASS");
                         }
+                    } else {
+                        return ActionResult.valueOf("PASS");
                     }
                 });
             }
