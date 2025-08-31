@@ -80,17 +80,28 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, HashMap<Block, ?> converterItemMaps) {
+    public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, HashMap<Block, Item> converterItemMaps, HashMap<Block, String> toolTypes) {
         conversionMap.forEach(
             (originBlock, convertedBlock) -> {
                 UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
-                    Object converterItem = converterItemMaps.get(convertedBlock);
-                    BlockPos pos = hitresult.getBlockPos();
-                    if (((player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof converterItem) || (converterItem instanceof Item && player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == converterItem)) && world.getBlockState(pos).isOf(originBlock)) {
-                        world.setBlockState(pos, convertedBlock.getDefaultState());
-                        return ActionResult.valueOf("SUCCESS");
-                    } else {
-                        return ActionResult.valueOf("PASS");
+                    String tool = toolTypes.get(convertedBlock);
+                    if (tool == "Other") {
+                        Object converterItem = converterItemMaps.get(convertedBlock);
+                        BlockPos pos = hitresult.getBlockPos();
+                        if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == converterItem && world.getBlockState(pos).isOf(originBlock)) {
+                            world.setBlockState(pos, convertedBlock.getDefaultState());
+                            return ActionResult.valueOf("SUCCESS");
+                        } else {
+                            return ActionResult.valueOf("PASS");
+                        }
+                    } else if (tool == "Axe") {
+                        BlockPos pos = hitresult.getBlockPos();
+                        if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceof AxeItem && world.getBlockState(pos).isOf(originBlock)) {
+                            world.setBlockState(pos, convertedBlock.getDefaultState());
+                            return ActionResult.valueOf("SUCCESS");
+                        } else {
+                            return ActionResult.valueOf("PASS");
+                        }
                     }
                 });
             }
@@ -100,8 +111,9 @@ public final class GlowstoneBlocks {
     public static void initialize() {
         HashMap<Block, Block> blockConversions = new HashMap<>();
         blockConversions.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
-        HashMap<Block, ?> converterItems = new HashMap<>();
-        converterItems.put(STRIPPED_POLISHED_GLOWSTONE, AxeItem);
-        registerBlockInteractEvents(blockConversions, converterItems);
+        HashMap<Block, Item> converterItems = new HashMap<>();
+        HashMap<Block, String> toolTypes = new HashMap<>();
+        toolTypes.put(STRIPPED_POLISHED_GLOWSTONE, "Axe");
+        registerBlockInteractEvents(blockConversions, converterItems, toolTypes);
     }
 }
