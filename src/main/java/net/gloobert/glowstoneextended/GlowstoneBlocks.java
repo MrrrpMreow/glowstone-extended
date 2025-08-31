@@ -148,9 +148,43 @@ public final class GlowstoneBlocks {
     public static void initialize() {
         HashMap<Block, Block> blockConversions = new HashMap<>();
         blockConversions.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
+        blockConversions.put(RED_POLISHED_GLOWSTONE, STRIPPED_RED_POLISHED_GLOWSTONE);
+        blockConversions.put(ORANGE_POLISHED_GLOWSTONE, STRIPPED_ORANGE_POLISHED_GLOWSTONE);
+        blockConversions.put(YELLOW_POLISHED_GLOWSTONE, STRIPPED_YELLOW_POLISHED_GLOWSTONE);
+        blockConversions.put(LIME_POLISHED_GLOWSTONE, STRIPPED_LIME_POLISHED_GLOWSTONE);
+        blockConversions.put(GREEN_POLISHED_GLOWSTONE, STRIPPED_GREEN_POLISHED_GLOWSTONE);
+        blockConversions.put(CYAN_POLISHED_GLOWSTONE, STRIPPED_CYAN_POLISHED_GLOWSTONE);
+        blockConversions.put(LIGHT_BLUE_POLISHED_GLOWSTONE, STRIPPED_LIGHT_BLUE_POLISHED_GLOWSTONE);
+        blockConversions.put(BLUE_POLISHED_GLOWSTONE, STRIPPED_BLUE_POLISHED_GLOWSTONE);
+        blockConversions.put(PURPLE_POLISHED_GLOWSTONE, STRIPPED_PURPLE_POLISHED_GLOWSTONE);
+        blockConversions.put(MAGENTA_POLISHED_GLOWSTONE, STRIPPED_MAGENTA_POLISHED_GLOWSTONE);
+        blockConversions.put(PINK_POLISHED_GLOWSTONE, STRIPPED_PINK_POLISHED_GLOWSTONE);
+        blockConversions.put(BROWN_POLISHED_GLOWSTONE, STRIPPED_BROWN_POLISHED_GLOWSTONE);
+        blockConversions.put(BLACK_POLISHED_GLOWSTONE, STRIPPED_BLACK_POLISHED_GLOWSTONE);
+        blockConversions.put(GRAY_POLISHED_GLOWSTONE, STRIPPED_GRAY_POLISHED_GLOWSTONE);
+        blockConversions.put(LIGHT_GRAY_POLISHED_GLOWSTONE, STRIPPED_LIGHT_GRAY_POLISHED_GLOWSTONE);
+        blockConversions.put(WHITE_POLISHED_GLOWSTONE, STRIPPED_WHITE_POLISHED_GLOWSTONE);
+        blockConversions.put(POLISHED_SOUL_GLOWSTONE, STRIPPED_POLISHED_SOUL_GLOWSTONE);
         HashMap<Block, Item> converterItems = new HashMap<>();
         HashMap<Block, String> toolTypes = new HashMap<>();
         toolTypes.put(STRIPPED_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_RED_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_ORANGE_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_YELLOW_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_LIME_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_GREEN_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_CYAN_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_LIGHT_BLUE_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_BLUE_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_PURPLE_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_MAGENTA_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_PINK_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_BROWN_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_BLACK_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_GRAY_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_LIGHT_GRAY_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_WHITE_POLISHED_GLOWSTONE, "Axe");
+        toolTypes.put(STRIPPED_POLISHED_SOUL_GLOWSTONE, "Axe");
         registerBlockInteractEvents(blockConversions, converterItems, toolTypes);
     }
 }
