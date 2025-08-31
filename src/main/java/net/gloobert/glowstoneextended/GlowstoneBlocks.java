@@ -101,7 +101,7 @@ public final class GlowstoneBlocks {
         HashMap<Block, Block> blockConversions = new HashMap<>();
         blockConversions.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
         HashMap<Block, Item> converterItems = new HashMap<>();
-        converterItems.put(STRIPPED_POLISHED_GLOWSTONE, Items.DIAMOND_AXE);
+        converterItems.put(STRIPPED_POLISHED_GLOWSTONE, AxeItem.asItem());
         registerBlockInteractEvents(blockConversions, converterItems);
     }
 }
