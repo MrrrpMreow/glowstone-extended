@@ -80,13 +80,12 @@ public final class GlowstoneBlocks {
         return block;
     }
 
-    public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, HashMap<Block, Item> converterItemMaps) {
+    public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, HashMap<Block, ?> converterItemMaps) {
         conversionMap.forEach(
             (originBlock, convertedBlock) -> {
-                Item activatorItem = converterItemMaps.get(convertedBlock);
                 UseBlockCallback.EVENT.register((player, world, hand, hitresult) -> {
                     BlockPos pos = hitresult.getBlockPos();
-                    if (player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == activatorItem && world.getBlockState(pos).isOf(originBlock)) {
+                    if (((player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() instanceOf converterItemMaps.get(convertedBlock)) || (converterItemMaps.get(convertedBlock) instanceOf Item && player.getEquippedStack(EquipmentSlot.MAINHAND).getItem() == converterItemMaps.get(convertedBlock))) && world.getBlockState(pos).isOf(originBlock)) {
                         world.setBlockState(pos, convertedBlock.getDefaultState());
                         return ActionResult.valueOf("SUCCESS");
                     } else {
@@ -100,8 +99,8 @@ public final class GlowstoneBlocks {
     public static void initialize() {
         HashMap<Block, Block> blockConversions = new HashMap<>();
         blockConversions.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
-        HashMap<Block, Item> converterItems = new HashMap<>();
-        converterItems.put(STRIPPED_POLISHED_GLOWSTONE, AxeItem.asItem());
+        HashMap<Block, ?> converterItems = new HashMap<>();
+        converterItems.put(STRIPPED_POLISHED_GLOWSTONE, AxeItem);
         registerBlockInteractEvents(blockConversions, converterItems);
     }
 }
