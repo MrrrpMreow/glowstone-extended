@@ -86,6 +86,22 @@ public final class GlowstoneBlocks {
 
     // Polished Glowstone Bricks and variants
     public static final Block POLISHED_GLOWSTONE_BRICKS = register("polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block RED_POLISHED_GLOWSTONE_BRICKS = register("red_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ORANGE_POLISHED_GLOWSTONE_BRICKS = register("orange_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block YELLOW_POLISHED_GLOWSTONE_BRICKS = register("yellow_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block GREEN_POLISHED_GLOWSTONE_BRICKS = register("green_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block BLUE_POLISHED_GLOWSTONE_BRICKS = register("blue_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block LIGHT_BLUE_POLISHED_GLOWSTONE_BRICKS = register("light_blue_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block PINK_POLISHED_GLOWSTONE_BRICKS = register("pink_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block PURPLE_POLISHED_GLOWSTONE_BRICKS = register("purple_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block BROWN_POLISHED_GLOWSTONE_BRICKS = register("brown_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block BLACK_POLISHED_GLOWSTONE_BRICKS = register("black_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block GRAY_POLISHED_GLOWSTONE_BRICKS = register("gray_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block LIGHT_GRAY_POLISHED_GLOWSTONE_BRICKS = register("light_gray_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block WHITE_POLISHED_GLOWSTONE_BRICKS = register("white_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block MAGENTA_POLISHED_GLOWSTONE_BRICKS = register("magenta_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block LIME_POLISHED_GLOWSTONE_BRICKS = register("lime_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
+    public static final Block CYAN_POLISHED_GLOWSTONE_BRICKS = register("cyan_polished_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15).sounds(BlockSoundGroup.GLASS)));
     public static final Block POLISHED_SOUL_GLOWSTONE_BRICKS = register("polished_soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10).sounds(BlockSoundGroup.GLASS)));
 
     // Glowstone Bricks and variants
@@ -109,6 +125,8 @@ public final class GlowstoneBlocks {
     public static final Block CYAN_GLOWSTONE_BRICKS = register("cyan_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block SOUL_GLOWSTONE_BRICKS = register("soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
+    public static final Item GLOWSTONE_BRICK = register("glowstone_brick", Item::new, new Item.Settings());
+
     public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
         Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", path), new BlockItem(block, new Item.Settings()));
@@ -186,5 +204,6 @@ public final class GlowstoneBlocks {
         toolTypes.put(STRIPPED_WHITE_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_POLISHED_SOUL_GLOWSTONE, "Axe");
         registerBlockInteractEvents(blockConversions, converterItems, toolTypes);
+        Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", "glowstone_brick"), GLOWSTONE_BRICK)
     }
 }

@@ -78,6 +78,22 @@ public class GlowstoneCreativeGUI {
             // Polished Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.WHITE_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.LIGHT_GRAY_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.GRAY_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.BLACK_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.BROWN_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.RED_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.ORANGE_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.YELLOW_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.LIME_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.GREEN_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.CYAN_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.LIGHT_BLUE_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.BLUE_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.PURPLE_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.MAGENTA_POLISHED_GLOWSTONE_BRICKS);
+            entries.add(GlowstoneBlocks.PINK_POLISHED_GLOWSTONE_BRICKS);
             // Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.SOUL_GLOWSTONE_BRICKS);
@@ -97,6 +113,8 @@ public class GlowstoneCreativeGUI {
             entries.add(GlowstoneBlocks.PURPLE_GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.MAGENTA_GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.PINK_GLOWSTONE_BRICKS);
+            // Miscellaneous items
+            entries.add(GlowstoneBlocks.GLOWSTONE_BRICK);
         })
         .build());
     public static void initialize() {
