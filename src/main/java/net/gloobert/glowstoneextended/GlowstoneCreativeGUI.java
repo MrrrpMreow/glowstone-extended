@@ -40,6 +40,22 @@ public class GlowstoneCreativeGUI {
             // Polished Glowstone and variants
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE);
             entries.add(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE);
+            entries.add(GlowstoneBlocks.WHITE_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.LIGHT_GRAY_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.GRAY_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.BLACK_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.BROWN_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.RED_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.ORANGE_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.YELLOW_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.LIME_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.GREEN_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.CYAN_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.LIGHT_BLUE_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.BLUE_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.PURPLE_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.MAGENTA_POLISHED_GLOWSTONE);
+            entries.add(GlowstoneBlocks.PINK_POLISHED_GLOWSTONE);
             // Polished Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE_BRICKS);

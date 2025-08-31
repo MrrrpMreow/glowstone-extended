@@ -45,6 +45,22 @@ public final class GlowstoneBlocks {
     
     // Polished Glowstone and variants
     public static final Block POLISHED_GLOWSTONE = register("polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block RED_POLISHED_GLOWSTONE = register("red_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block ORANGE_POLISHED_GLOWSTONE = register("orange_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block YELLOW_POLISHED_GLOWSTONE = register("yellow_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block GREEN_POLISHED_GLOWSTONE = register("green_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BLUE_POLISHED_GLOWSTONE = register("blue_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIGHT_BLUE_POLISHED_GLOWSTONE = register("light_blue_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block PINK_POLISHED_GLOWSTONE = register("pink_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block PURPLE_POLISHED_GLOWSTONE = register("purple_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BROWN_POLISHED_GLOWSTONE = register("brown_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block BLACK_POLISHED_GLOWSTONE = register("black_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block GRAY_POLISHED_GLOWSTONE = register("gray_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIGHT_GRAY_POLISHED_GLOWSTONE = register("light_gray_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block WHITE_POLISHED_GLOWSTONE = register("white_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block MAGENTA_POLISHED_GLOWSTONE = register("magenta_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block LIME_POLISHED_GLOWSTONE = register("lime_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
+    public static final Block CYAN_POLISHED_GLOWSTONE = register("cyan_polished_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block POLISHED_SOUL_GLOWSTONE = register("polished_soul_glowstone", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
 
     // Stripped Polished Glowstone and variants
