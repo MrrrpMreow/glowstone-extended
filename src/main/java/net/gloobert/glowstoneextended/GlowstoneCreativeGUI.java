@@ -56,6 +56,8 @@ public class GlowstoneCreativeGUI {
             entries.add(GlowstoneBlocks.PURPLE_POLISHED_GLOWSTONE);
             entries.add(GlowstoneBlocks.MAGENTA_POLISHED_GLOWSTONE);
             entries.add(GlowstoneBlocks.PINK_POLISHED_GLOWSTONE);
+            // Stripped Polished Glowstone and variants
+            
             // Polished Glowstone Bricks and variants
             entries.add(GlowstoneBlocks.POLISHED_GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.POLISHED_SOUL_GLOWSTONE_BRICKS);
