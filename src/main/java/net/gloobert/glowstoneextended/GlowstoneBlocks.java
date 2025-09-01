@@ -8,6 +8,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.AxeItem;
@@ -137,7 +138,7 @@ public final class GlowstoneBlocks {
 
     public static Item registerItem(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
 		// Create the item key.
-		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(FabricDocsReference.MOD_ID, name));
+		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("glowstone-extended", name));
 
 		// Create the item instance.
 		Item item = itemFactory.apply(settings.registryKey(itemKey));
