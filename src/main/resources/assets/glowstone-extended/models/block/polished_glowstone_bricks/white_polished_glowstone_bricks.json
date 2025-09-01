@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "glowstone-extended:block/polished_glowstone_bricks/white_polished_glowstone_bricks"
+  }
+}
