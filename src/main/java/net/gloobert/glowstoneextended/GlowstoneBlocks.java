@@ -8,8 +8,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.tag.TagKey;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.AxeItem;
@@ -25,7 +23,6 @@ import net.minecraft.entity.EquipmentSlot;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
 import java.util.HashMap;
-import java.util.function.Function;
 
 public final class GlowstoneBlocks {
     // Glowstone variants
@@ -129,27 +126,15 @@ public final class GlowstoneBlocks {
     public static final Block SOUL_GLOWSTONE_BRICKS = register("soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
     // Miscellaneous items
-    public static final Item GLOWSTONE_BRICK = registerItem("glowstone_brick", Item::new, new Item.Settings());
+    public static final Item GLOWSTONE_BRICK =
+      Registry.register(Registries.ITEM, new Identifier("glowstone-extended", "glowstone_brick"),
+        new Item(new Item.Settings()));
 
     public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
         Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", path), new BlockItem(block, new Item.Settings()));
         return block;
     }
-
-    public static Item registerItem(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
-		// Create the item key.
-		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("glowstone-extended", name));
-
-		// Create the item instance.
-		Item item = itemFactory.apply(settings.registryKey(itemKey));
-
-		// Register the item.
-		Registry.register(Registries.ITEM, itemKey, item);
-
-		return item;
-	}
-
 
     public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, HashMap<Block, Item> converterItemMaps, HashMap<Block, String> toolTypes) {
         conversionMap.forEach(
