@@ -23,6 +23,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
 import java.util.HashMap;
+import java.util.function;
 
 public final class GlowstoneBlocks {
     // Glowstone variants
