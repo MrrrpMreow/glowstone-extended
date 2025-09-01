@@ -204,6 +204,6 @@ public final class GlowstoneBlocks {
         toolTypes.put(STRIPPED_WHITE_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_POLISHED_SOUL_GLOWSTONE, "Axe");
         registerBlockInteractEvents(blockConversions, converterItems, toolTypes);
-        Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", "glowstone_brick"), GLOWSTONE_BRICK)
+        Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", "glowstone_brick"), GLOWSTONE_BRICK);
     }
 }
