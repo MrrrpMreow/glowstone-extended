@@ -125,13 +125,28 @@ public final class GlowstoneBlocks {
     public static final Block CYAN_GLOWSTONE_BRICKS = register("cyan_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 15)));
     public static final Block SOUL_GLOWSTONE_BRICKS = register("soul_glowstone_bricks", new Block(Block.Settings.create().strength(0.3f).luminance(value -> 10)));
     
-    public static final Item GLOWSTONE_BRICK = register("glowstone_brick", Item::new, new Item.Settings());
+    // Miscellaneous items
+    public static final Item GLOWSTONE_BRICK = registerItem("glowstone_brick", Item::new, new Item.Settings());
 
     public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
         Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", path), new BlockItem(block, new Item.Settings()));
         return block;
     }
+
+    public static Item registerItem(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
+		// Create the item key.
+		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(FabricDocsReference.MOD_ID, name));
+
+		// Create the item instance.
+		Item item = itemFactory.apply(settings.registryKey(itemKey));
+
+		// Register the item.
+		Registry.register(Registries.ITEM, itemKey, item);
+
+		return item;
+	}
+
 
     public static void registerBlockInteractEvents(HashMap<Block, Block> conversionMap, HashMap<Block, Item> converterItemMaps, HashMap<Block, String> toolTypes) {
         conversionMap.forEach(
@@ -204,6 +219,5 @@ public final class GlowstoneBlocks {
         toolTypes.put(STRIPPED_WHITE_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_POLISHED_SOUL_GLOWSTONE, "Axe");
         registerBlockInteractEvents(blockConversions, converterItems, toolTypes);
-        Registry.register(Registries.ITEM, Identifier.of("glowstone-extended", "glowstone_brick"), GLOWSTONE_BRICK);
     }
 }
