@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 4,
+  "ingredient": {
+    "item": "glowstone-extended:soul_glowstone_brick"
+  },
+  "result": "glowstone-extended:glowstone_brick"
+}

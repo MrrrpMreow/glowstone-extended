@@ -230,7 +230,7 @@ public final class GlowstoneBlocks {
         converterItems.put(GRAY_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
         converterItems.put(LIGHT_GRAY_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
         converterItems.put(WHITE_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
-        converterItems.put(POLISHED_SOUL_GLOWSTONE, GLOWSTONE_BRICK);
+        converterItems.put(POLISHED_SOUL_GLOWSTONE, SOUL_GLOWSTONE_BRICK);
         HashMap<Block, String> toolTypes = new HashMap<>();
         toolTypes.put(STRIPPED_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_RED_POLISHED_GLOWSTONE, "Axe");
