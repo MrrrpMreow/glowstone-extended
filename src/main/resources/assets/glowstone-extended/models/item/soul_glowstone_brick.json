@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "glowstone-extended:item/soul_glowstone_brick"
+  }
+}

@@ -114,7 +114,10 @@ public class GlowstoneCreativeGUI {
             entries.add(GlowstoneBlocks.MAGENTA_GLOWSTONE_BRICKS);
             entries.add(GlowstoneBlocks.PINK_GLOWSTONE_BRICKS);
             // Miscellaneous items
+            entries.add(Items.GLOWSTONE_DUST);
             entries.add(GlowstoneBlocks.GLOWSTONE_BRICK);
+            entries.add(GlowstoneBlocks.SOUL_GLOWSTONE_DUST);
+            entries.add(GlowstoneBlocks.SOUL_GLOWSTONE_BRICK);
         })
         .build());
     public static void initialize() {

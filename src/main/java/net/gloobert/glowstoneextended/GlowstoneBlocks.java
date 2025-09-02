@@ -129,6 +129,12 @@ public final class GlowstoneBlocks {
     public static final Item GLOWSTONE_BRICK =
       Registry.register(Registries.ITEM, new Identifier("glowstone-extended", "glowstone_brick"),
         new Item(new Item.Settings()));
+    public static final Item SOUL_GLOWSTONE_BRICK =
+      Registry.register(Registries.ITEM, new Identifier("glowstone-extended", "soul_glowstone_brick"),
+        new Item(new Item.Settings()));
+    public static final Item SOUL_GLOWSTONE_DUST =
+      Registry.register(Registries.ITEM, new Identifier("glowstone-extended", "soul_glowstone_dust"),
+        new Item(new Item.Settings()));
 
     public static <T extends Block> T register(String path, T block) {
         Registry.register(Registries.BLOCK, Identifier.of("glowstone-extended", path), block);
