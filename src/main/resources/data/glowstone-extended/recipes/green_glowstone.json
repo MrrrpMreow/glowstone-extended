@@ -8,14 +8,14 @@
   ],
   "key": {
     "D": {
-      "item": "minecraft:magenta_dye"
+      "item": "minecraft:green_dye"
     },
     "G": {
-      "item": "glowstone-extended:glowstone"
+      "tag": "glowstone-extended:glowstone"
     }
   },
   "result": {
-    "item": "glowstone-extended:magenta_glowstone",
+    "item": "glowstone-extended:green_glowstone",
     "count": 8
   }
 }

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "glowstone-extended:polished_glowstone",
+    "glowstone-extended:red_polished_glowstone",
+    "glowstone-extended:orange_polished_glowstone",
+    "glowstone-extended:yellow_polished_glowstone",
+    "glowstone-extended:lime_polished_glowstone",
+    "glowstone-extended:green_polished_glowstone",
+    "glowstone-extended:cyan_polished_glowstone",
+    "glowstone-extended:light_blue_polished_glowstone",
+    "glowstone-extended:blue_polished_glowstone",
+    "glowstone-extended:purple_polished_glowstone",
+    "glowstone-extended:magenta_polished_glowstone",
+    "glowstone-extended:pink_polished_glowstone",
+    "glowstone-extended:white_polished_glowstone",
+    "glowstone-extended:light_gray_polished_glowstone",
+    "glowstone-extended:gray_polished_glowstone",
+    "glowstone-extended:black_polished_glowstone",
+    "glowstone-extended:brown_polished_glowstone"
+  ]
+}

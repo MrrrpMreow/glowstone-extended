@@ -8,14 +8,14 @@
   ],
   "key": {
     "D": {
-      "item": "minecraft:purple_dye"
+      "item": "minecraft:red_dye"
     },
     "G": {
-      "tag": "glowstone-extended:glowstone"
+      "tag": "glowstone-extended:polished_glowstone"
     }
   },
   "result": {
-    "item": "glowstone-extended:purple_glowstone",
+    "item": "glowstone-extended:red_polished_glowstone",
     "count": 8
   }
 }

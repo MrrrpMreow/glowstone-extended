@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "glowstone-extended:soul_recipe_blocks"
+    },
+    {
+      "tag": "glowstone-extended:soul_recipe_blocks"
+    },
+    {
+      "tag": "glowstone-extended:soul_recipe_blocks"
+    },
+    {
+      "tag": "glowstone-extended:polished_glowstone"
+    }
+  ],
+  "result": {
+    "item": "glowstone-extended:polished_soul_glowstone",
+    "count": 1
+  }
+}

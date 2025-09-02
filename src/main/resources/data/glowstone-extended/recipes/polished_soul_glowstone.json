@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "key": {
+    "G": {
+      "tag": "minecraft:soul_glowstone"
+    }
+  },
+  "result": {
+    "item": "glowstone-extended:polished_soul_glowstone",
+    "count": 8
+  }
+}
