@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "key": {
+    "G": {
+      "item": "glowstone-extended:glowstone_brick"
+    }
+  },
+  "result": {
+    "item": "glowstone-extended:glowstone_bricks",
+    "count": 1
+  }
+}
