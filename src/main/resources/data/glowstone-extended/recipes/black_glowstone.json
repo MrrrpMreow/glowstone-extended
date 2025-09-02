@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:black_dye"
+    },
+    "G": {
+      "item": "glowstone-extended:glowstone"
+    }
+  },
+  "result": {
+    "item": "glowstone-extended:black_glowstone",
+    "count": 8
+  }
+}

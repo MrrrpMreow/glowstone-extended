@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "glowstone-extended:soul_glowstone",
+    "glowstone-extended:polished_soul_glowstone",
+    "glowstone-extended:soul_glowstone_bricks",
+    "glowstone-extended:polished_soul_glowstone_bricks",
+    "glowstone-extended:stripped_polished_soul_glowstone"
+  ]
+}
