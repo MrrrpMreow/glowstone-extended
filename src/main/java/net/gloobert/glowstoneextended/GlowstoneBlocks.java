@@ -168,6 +168,7 @@ public final class GlowstoneBlocks {
     
     public static void initialize() {
         HashMap<Block, Block> blockConversions = new HashMap<>();
+        // Stripping polished glowstone
         blockConversions.put(POLISHED_GLOWSTONE, STRIPPED_POLISHED_GLOWSTONE);
         blockConversions.put(RED_POLISHED_GLOWSTONE, STRIPPED_RED_POLISHED_GLOWSTONE);
         blockConversions.put(ORANGE_POLISHED_GLOWSTONE, STRIPPED_ORANGE_POLISHED_GLOWSTONE);
@@ -186,7 +187,44 @@ public final class GlowstoneBlocks {
         blockConversions.put(LIGHT_GRAY_POLISHED_GLOWSTONE, STRIPPED_LIGHT_GRAY_POLISHED_GLOWSTONE);
         blockConversions.put(WHITE_POLISHED_GLOWSTONE, STRIPPED_WHITE_POLISHED_GLOWSTONE);
         blockConversions.put(POLISHED_SOUL_GLOWSTONE, STRIPPED_POLISHED_SOUL_GLOWSTONE);
+        // Unstripping polished glowstone
+        blockConversions.put(STRIPPED_POLISHED_GLOWSTONE, POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_RED_POLISHED_GLOWSTONE, RED_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_ORANGE_POLISHED_GLOWSTONE, ORANGE_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_YELLOW_POLISHED_GLOWSTONE, YELLOW_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_LIME_POLISHED_GLOWSTONE, LIME_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_GREEN_POLISHED_GLOWSTONE, GREEN_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_CYAN_POLISHED_GLOWSTONE, CYAN_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_LIGHT_BLUE_POLISHED_GLOWSTONE, LIGHT_BLUE_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_BLUE_POLISHED_GLOWSTONE, BLUE_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_PURPLE_POLISHED_GLOWSTONE, PURPLE_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_MAGENTA_POLISHED_GLOWSTONE, MAGENTA_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_PINK_POLISHED_GLOWSTONE, PINK_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_BROWN_POLISHED_GLOWSTONE, BROWN_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_BLACK_POLISHED_GLOWSTONE, BLACK_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_GRAY_POLISHED_GLOWSTONE, GRAY_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_LIGHT_GRAY_POLISHED_GLOWSTONE, LIGHT_GRAY_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_WHITE_POLISHED_GLOWSTONE, WHITE_POLISHED_GLOWSTONE);
+        blockConversions.put(STRIPPED_POLISHED_SOUL_GLOWSTONE, POLISHED_SOUL_GLOWSTONE);
         HashMap<Block, Item> converterItems = new HashMap<>();
+        toolTypes.put(POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(RED_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(ORANGE_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(YELLOW_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(LIME_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(GREEN_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(CYAN_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(LIGHT_BLUE_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(BLUE_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(PURPLE_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(MAGENTA_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(PINK_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(BROWN_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(BLACK_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(GRAY_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(LIGHT_GRAY_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(WHITE_POLISHED_GLOWSTONE, GLOWSTONE_BRICK);
+        toolTypes.put(POLISHED_SOUL_GLOWSTONE, GLOWSTONE_BRICK);
         HashMap<Block, String> toolTypes = new HashMap<>();
         toolTypes.put(STRIPPED_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_RED_POLISHED_GLOWSTONE, "Axe");
@@ -206,6 +244,26 @@ public final class GlowstoneBlocks {
         toolTypes.put(STRIPPED_LIGHT_GRAY_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_WHITE_POLISHED_GLOWSTONE, "Axe");
         toolTypes.put(STRIPPED_POLISHED_SOUL_GLOWSTONE, "Axe");
+
+
+        toolTypes.put(POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(RED_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(ORANGE_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(YELLOW_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(LIME_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(GREEN_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(CYAN_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(LIGHT_BLUE_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(BLUE_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(PURPLE_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(MAGENTA_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(PINK_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(BROWN_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(BLACK_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(GRAY_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(LIGHT_GRAY_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(WHITE_POLISHED_GLOWSTONE, "Other");
+        toolTypes.put(POLISHED_SOUL_GLOWSTONE, "Other");
         registerBlockInteractEvents(blockConversions, converterItems, toolTypes);
     }
 }

@@ -8,14 +8,14 @@
   ],
   "key": {
     "D": {
-      "item": "minecraft:green_dye"
+      "item": "minecraft:cyan_dye"
     },
     "G": {
-      "tag": "glowstone-extended:polished_glowstone"
+      "tag": "glowstone-extended:glowstone_bricks"
     }
   },
   "result": {
-    "item": "glowstone-extended:green_polished_glowstone",
+    "item": "glowstone-extended:cyan_polished_glowstone_bricks",
     "count": 8
   }
 }

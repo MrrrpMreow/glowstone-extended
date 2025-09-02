@@ -7,11 +7,11 @@
   ],
   "key": {
     "G": {
-      "item": "glowstone-extended:soul_glowstone"
+      "item": "glowstone-extended:polished_glowstone"
     }
   },
   "result": {
-    "item": "glowstone-extended:polished_soul_glowstone",
+    "item": "glowstone-extended:polished_glowstone_bricks",
     "count": 4
   }
 }

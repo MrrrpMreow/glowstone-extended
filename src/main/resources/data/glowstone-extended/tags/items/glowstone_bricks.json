@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "glowstone-extended:glowstone_bricks",
+    "glowstone-extended:red_glowstone_bricks",
+    "glowstone-extended:orange_glowstone_bricks",
+    "glowstone-extended:yellow_glowstone_bricks",
+    "glowstone-extended:lime_glowstone_bricks",
+    "glowstone-extended:green_glowstone_bricks",
+    "glowstone-extended:cyan_glowstone_bricks",
+    "glowstone-extended:light_blue_glowstone_bricks",
+    "glowstone-extended:blue_glowstone_bricks",
+    "glowstone-extended:purple_glowstone_bricks",
+    "glowstone-extended:magenta_glowstone_bricks",
+    "glowstone-extended:pink_glowstone_bricks",
+    "glowstone-extended:white_glowstone_bricks",
+    "glowstone-extended:light_gray_glowstone_bricks",
+    "glowstone-extended:gray_glowstone_bricks",
+    "glowstone-extended:black_glowstone_bricks",
+    "glowstone-extended:brown_glowstone_bricks"
+  ]
+}

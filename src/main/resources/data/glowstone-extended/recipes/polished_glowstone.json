@@ -7,11 +7,11 @@
   ],
   "key": {
     "G": {
-      "tag": "minecraft:glowstone"
+      "item": "minecraft:glowstone"
     }
   },
   "result": {
     "item": "glowstone-extended:polished_glowstone",
-    "count": 8
+    "count": 4
   }
 }
