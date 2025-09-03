@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "glowstone-extended:soul_glowstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "glowstone-extended:soul_glowstone_dust"
+    },
+    {
+      "chance": 0.75,
+      "item": "glowstone-extended:soul_glowstone_dust"
+    },
+    {
+      "chance": 0.25,
+      "item": "create:experience_nugget"
+    }
+  ]
+}

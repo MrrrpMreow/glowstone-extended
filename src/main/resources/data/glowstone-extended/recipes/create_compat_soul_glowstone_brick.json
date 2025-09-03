@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "glowstone-extended:soul_glowstone_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "glowstone-extended:soul_glowstone_brick"
+    }
+  ]
+}

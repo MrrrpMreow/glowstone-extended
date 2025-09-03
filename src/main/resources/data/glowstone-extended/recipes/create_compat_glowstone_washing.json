@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "tag": "glowstone-extended:glowstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:glowstone"
+    }
+  ]
+}

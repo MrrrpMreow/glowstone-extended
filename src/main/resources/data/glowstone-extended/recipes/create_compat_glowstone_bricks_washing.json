@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "tag": "glowstone-extended:glowstone_bricks"
+    }
+  ],
+  "results": [
+    {
+      "item": "glowstone-extended:glowstone_bricks"
+    }
+  ]
+}

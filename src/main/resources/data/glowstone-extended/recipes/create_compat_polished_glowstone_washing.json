@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "tag": "glowstone-extended:polished_glowstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "glowstone-extended:polished_glowstone"
+    }
+  ]
+}

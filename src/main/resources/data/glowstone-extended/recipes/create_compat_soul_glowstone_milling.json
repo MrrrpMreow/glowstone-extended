@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "glowstone-extended:soul_glowstone_brick"
+    }
+  ],
+  "results": [
+    {
+      "item": "glowstone-extended:soul_glowstone_dust"
+    }
+  ]
+}
